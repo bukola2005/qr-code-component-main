@@ -7,12 +7,11 @@
 html{
     font-size: 62.5%;
 }
-
 body{
     background-color: hsl(212, 45%, 89%);
     line-height: 1.4;
     font-family: 'Outfit',sans-serif;
-    padding: 3rem;
+    padding: 1rem;
 }
 
 img{
@@ -21,19 +20,14 @@ img{
 }
 
 .container{
-    width: 40%;
+    /* max-width: 1440px; */
+    width: 29%;
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
     background-color: hsl(0, 0%, 100%);
 }
 
-.inner{
-     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 .text-box{
     padding: 1.5rem;
@@ -43,13 +37,34 @@ img{
 h3{
    color: hsl(218, 44%, 22%);
    font-weight: 700;
-   font-size: 2.5rem;
+   font-size: 2.2rem;
    margin-bottom: 1rem;
    
 }
 
 p{
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: hsl(220, 15%, 55%);
+}
+
+/* moblie */
+
+@media only screen and (max-width: 380px){
+    html{
+        font-size: 50%;
+    }
+   h3{
+    font-size: 1.1rem;
+   }
+   .text-box{
+ padding: 0.2rem;
+}
+.container{
+    width: 34%;
+    padding: 1rem;
+}
+p{
+    font-size: .9rem;
+}
 }
